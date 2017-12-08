@@ -1,5 +1,8 @@
 \documentclass[12 pt]{article}
 \usepackage[left=2.66cm,top=3cm,right=2.66cm,bottom=3cm,bindingoffset=0.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\onehalfspacing
 \begin{document}
 \begin{titlepage}
 \begin{Huge}
@@ -20,16 +23,45 @@ Public Key Cryptosystems}
 \textbf{Abstract}
 \end{center}
 This text discusses the concept behind public key cryptosystems, while focusing on a very popular encryption method. It also presents an array of real world implementations of the algorithm.
+Building upon ground-breaking research papers, it interprets the intriguing subject matter into an accessible form, and goes further to put forth their major applications and a few of their limitless possibilities.
 \\
 \\
 \textit{Key words and phrases:} cryptosystems, discrete mathematics, encryption, decryption, prime numbers, digital signatures, public key cryptosystems, authentication, cyber security.
 \end{titlepage}
 \pagebreak
 \begin{LARGE}	
-\noindent \textbf{\textsc{Introduction}}
+\noindent \textbf{{Introduction to public key cryptosystems}}
 \end{LARGE}
 
-\noindent gsdgjk sgsgsdghj gsjgskgsg gsjkgsjgsgs fds fdsgdhdh ewr w wrewerwtewerc. sfs fsretiwhen rwrhjkcwjriod fnsjirnkmwe fesjnimfekw. njcd fiojmf gdgdg hgfs qewr uyt gfdgd hftyr fdsfs hthtu kld g sfe h fgfjgjg gdfdgd.
+\noindent 
+
+\pagebreak
+\begin{LARGE}
+\noindent \textbf{{RSA Algorithm}}
+\end{LARGE}\bigskip
+
+\noindent RSA algorithm is an asymmetric cryptographic algorithm that is used extensively by computers nowadays. It was proposed by Ron Rivest, Adi Shamir and Leonard Adleman in their 1978 paper [reference], and hence, bears their name. It is one of the most popular implementations of public key cryptosystems.\bigskip
+
+\noindent It is driven by the fact that finding the prime factors of a number is one of the most complex mathematical problems. Initially, the user creates and publishes the product of two large prime numbers, along with an auxiliary value. The auxiliary value takes up the role of the ``public key'' which is known to all. \emph{But, the prime factors must be kept secret.}\bigskip
+
+1. Choose\ two\ different,\ large,\ random\  prime\  numbers\ \textbf{p} and \textbf{q}
+
+2. Calculate \textbf{n} = \textbf{p}*\textbf{q}
+
+3. \textbf{\boldmath $\phi(n)$ = (p - 1)*(q - 1)}
+
+4. Choose an integer \textbf{e} such that:
+
+\begin{itemize} \setlength\itemsep{1 em}
+\setstretch{0.61803398875} \item  1 \textless \textbf{e} \textless \boldmath$\phi(n)$
+\setstretch{0.61803398875} \item \textbf{e} is co-prime to \boldmath$\phi(n)$
+\end{itemize}
+
+5. Compute \textbf{d} such that \boldmath \textbf{d}*\textbf{e} = 1+\textbf{k}*\boldmath $\phi(n)$
+\bigskip
+\\
+A popular choice for public exponents is \textbf{e} = $2$ \textsuperscript{$16$}+$1$
+
 \end{document}
 
 
