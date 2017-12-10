@@ -103,9 +103,11 @@ Communication security typically includes requirements that the communication mu
 \emph{\\\\There are various algorithms which are employed to generate and implement the public and private key, one of them the RSA algorithm, which will be elucidated upon in the next section.}
 
 \pagebreak
-\begin{LARGE}
-\noindent \textbf{{RSA Algorithm}}
-\end{LARGE}\\[12 pt]
+\begin{LARGE}	
+\begin{center}
+\textbf{\textsc{RSA Algorithm}}
+\end{center}
+\end{LARGE}
 
 \noindent RSA algorithm is an asymmetric cryptographic algorithm that is used extensively by computers nowadays. It was proposed by Ron Rivest, Adi Shamir and Leonard Adleman in their 1978 paper \textsuperscript{[1]}, and hence, bears their name. It is one of the most popular implementations of public key cryptosystems.\bigskip
 
@@ -191,19 +193,24 @@ $c$\textsuperscript{$d$} $\equiv$ $m$ \hspace{66 pt} ($mod$ $n$)
 \begin{LARGE}
 \noindent \textbf{Real World Applications of RSA Algorithm}
 \end{LARGE}\\[12 pt]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The RSA Algorithm is utilized extensively for many practical applications. Typically, these applications can be categorized as "key exchange" and/or "digital signature".
+\\\\\textbf{HTTPS is implimented usng RSA.}
+\\For example, when we visit a website beginning with "https://", it is highly likely that the web browser is using RSA to validate the certificate for the remote server to which we have connected. Once the browser validates the certificate chain (using RSA signature functionality), it will probably use RSA to perform a secure key exchange with the server. The end result: the browser can communicate securely with a remote server and provide us with confidence that the remote server in question is indeed the server you intended to contact -- and not an intruder executing a man-in-the-middle attack to steal private information.
+\\\\HTTPS is used with countless websites where the exchange of personal or private information takes place (passwords, eCommerce, etc.)
+\\\\Computer applications are often digitally signed so that the consumer can verify that the software has not been modified since the publisher released it. If the software is modified after signing (even by one bit) the digital signature will fail. This provides a way to prevent non-trusted code from executing.
+\\\\Then there are other technologies like commercial satellite radio, satellite TV, etc. If the content publisher simply broadcast the media in the clear, they would have a difficult time convincing people to pay their monthly bill. Instead they need a means to distribute the decryption keys to their paid subscribers, while keeping the general public out -- RSA is a candidate for that too.
+\\\\RSA is used for many other \textbf{Digital Rights Management} (DRM) applications. DRM is a set of access control technologies for restricting the use of proprietary hardware and copyrighted works. DRM technologies try to control the use, modification, and distribution of copyrighted works (such as software and multimedia content), as well as systems within devices that enforce these policies.
+\\\\The security of the RSA Algorithm is based on the belief that factoring large integers is and will continue to be computationally expensive. RSA has been in use for more than 30 years and to this day is still considered secure, provided keys of sufficient length are used. Keys created today are typically at least 2048 bits.
+\\\\\textbf{Why is RSA so popular?}
+\begin{itemize}
+  \item It's not governed by any active patents.
+  \item Anyone can use it, royalty free in any private or commercial
+ product.
+ \item RSA can do encryption, decryption, signature and signature verification -- all with the same two functions.
+ \item It has been around for more than 30 years and has not been compromised.
+\end{itemize} 
 
 
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagebreak
 
 \begin{large}
